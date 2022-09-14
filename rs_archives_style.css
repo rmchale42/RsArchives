@@ -1,0 +1,183 @@
+body {
+	background-color: black;
+}
+
+#grid {
+	display: grid;
+	height: 100%;
+	width: 100%;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: 10% 10% 65% 25%;
+	column-gap: 2%;
+	row-gap: 5%;
+}
+
+#pageHead {
+	color: white;
+	font-family: courier new, lucida console, monaco;
+	text-align: center;
+	margin-top: 5%;
+}
+
+
+.pageTitle {
+	grid-row: 1;
+	grid-column: 3 / 8;
+	justify-items: center;
+}
+
+.mainMenu {
+	display: flex;
+	justify-content: space-around;
+	grid-row: 2;
+	grid-column: 1 / 10;
+}
+
+.navbar {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+#a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-family: courier new, lucida console, monaco;
+	text-align: center;
+	border-size: 2px;
+	border-color: white;
+	border-style: solid;
+	padding: 1%;
+}
+
+#b {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-family: courier new, lucida console, monaco;
+	border-size: 2px;
+	border-color: white;
+	border-style: solid;
+	padding: 1%;
+}
+
+#c {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-family: courier new, lucida console, monaco;
+	border-size: 2px;
+	border-color: white;
+	border-style: solid;
+	padding: 1%;
+}
+
+#d {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-family: courier new, lucida console, monaco;
+	border-size: 2px;
+	border-color: white;
+	border-style: solid;
+	padding: 1%;
+}
+
+#e {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-family: courier new, lucida console, monaco;
+	border-size: 2px;
+	border-color: white;
+	border-style: solid;
+	padding: 1%;
+}
+
+.content {
+	margin-top: 3%;
+	margin-bottom: 3%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: grid;
+	grid-row: 3;
+	grid-column: 3 / 8;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: 1fr 3fr 1fr;
+}
+
+.homeContent{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: grid;
+	grid-row: 3;
+	grid-column: 2 / 9;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.memeContent {
+	margin-top: 3%;
+	margin-bottom: 3%;
+	background-image: url("memes/0.jpg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: grid;
+	grid-row: 3;
+	grid-column: 3 / 8;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: 1fr 3fr 1fr;
+}
+
+.button {
+	background-color: black;
+	color: white;
+	font-family: courier new, lucida console, monaco;
+}
+
+#left {
+	grid-row: 3;
+	grid-column: 2;
+	font-size: 20px;
+	justify-self: center;
+	align-self: center;
+}
+
+#right {
+	grid-row: 3;
+	grid-column: 8;
+	font-size: 20px;
+	justify-self: center;
+	align-self: center;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	text-decoration: underline;
+}
+	
+a:visited {
+	color: white;
+}
+
+
+button:hover {
+	color: white;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+
+
