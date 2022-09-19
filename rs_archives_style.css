@@ -19,7 +19,6 @@ body {
 	margin-top: 5%;
 }
 
-
 .pageTitle {
 	grid-row: 1;
 	grid-column: 3 / 8;
@@ -37,6 +36,10 @@ body {
 	display: flex;
 	width: 100%;
 	justify-content: space-around;
+	border-bottom: solid;
+	border-bottom-color: white;
+	border-bottom-width: 2px;
+	padding-bottom: 5%;
 }
 
 #a {
@@ -108,8 +111,22 @@ body {
 	grid-template-rows: 1fr 3fr 1fr;
 }
 
-.homeContent{
-	margin-top: 1%;
+.memeContent {
+	margin-top: 3%;
+	margin-bottom: 3%;
+	background-image: url('memes/0.jpg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: grid;
+	grid-row: 3;
+	grid-column: 3 / 8;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: 1fr 3fr 1fr;
+}
+
+.homeContent {
+	margin-top: 3%;
 	margin-bottom: 1%;
 	background-size: contain;
 	background-position: center;
@@ -117,16 +134,236 @@ body {
 	display: grid;
 	grid-row: 3;
 	grid-column: 2 / 9;
-	grid-template-columns: repeat(9, 1fr);
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 100%;
+	column-gap: 3%;
 }
 
-.memeContent {
+.aboutContent {
+	margin-top: 3%;
+	margin-bottom: 3%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	grid-row: 3;
+	grid-column: 3 / 8;
+}
+
+.aboutH1 {
+	color: white;
+	font-family: courier new, lucida console, monaco;
+	justify-self: center;
+	text-align: center;
+}
+
+.aboutH2 {
+	color: white;
+	font-family: courier new, lucida console, monaco;
+}
+
+.aboutP {
+	color: white;
+	font-family: courier new, lucida console, monaco;
+}
+
+#contInfo {
+	justify-self: center;
+	text-align: center;
+}
+
+#botm {
+	display: grid;
+	grid-row: 1;
+	grid-column: 1;
+	grid-template-rows: 75% 25%;
+	grid-template-columns: 1fr;
+}
+
+#botmCover {
+	grid-row: 1;
+	justify-self: center;
+	align-self: top;
+	height: 100%;
+	width: 45%;
+}
+
+#botmLabel {
+	display: grid;
+	grid-row: 2;
+	grid-column: 1;
+	grid-template-rows: 100%;
+	grid-template-columns: 100%;
+}
+
+#botmLabelInfo{
+	color: white;
+	font-family: courier new, lucida console, monaco;
+	grid-row: 1;
+	justify-self: center;
+	align-self: center;
+	text-align: center;
+}
+
+#otherStuff {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: 2fr 1fr;
+}
+
+
+#quoteWords {
+	display: grid;
+	grid-template-rows: 20% 80%;
+	grid-template-columns: 100%;
+	grid-row: 1;
+	grid-column: 1;
+	height: 100%;
+	width: 100%;
+	border-top-style: solid;
+	border-top-color: white;
+	border-top-width: 2px;
+	padding-top: 2%;
+}
+
+#quoteWords h4 {
+	color: white;
+	font-family: courier new, lucida console, monaco;
+	justify-self: center;
+	align-self: center;
+	grid-row: 1;
+	grid-column: 1;
+}
+
+#quoteWords p {
+	color: white;
+	font-family: courier new, lucida console, monaco;
+	grid-row: 2;
+	grid-column: 1;
+	justify-self: center;
+	align-self: top;
+}
+
+#vidWords {
+	display: grid;
+	grid-template-rows: 20% 80%;
+	grid-template-columns: 100%;
+	grid-row: 2;
+	grid-column: 1;
+	height: 100%;
+	width: 100%;
+	border-top-style: solid;
+	border-top-color: white;
+	border-top-width: 2px;
+	padding-top: 2%;
+}
+
+#vidWords h4 {
+	color: white;
+	font-family: courier new, lucida console, monaco;
+	justify-self: center;
+	align-self: center;
+	grid-row: 1;
+	grid-column: 1;
+}
+
+#vidWords p {
+	color: white;
+	font-family: courier new, lucida console, monaco;
+	grid-row: 2;
+	grid-column: 1;
+	justify-self: center;
+	align-self: top;
+}
+
+#memeWords {
+	display: grid;
+	grid-template-rows: 20% 80%;
+	grid-template-columns: 100%;
+	grid-row: 3;
+	grid-column: 1;
+	height: 100%;
+	width: 100%;
+	border-top-style: solid;
+	border-top-color: white;
+	border-top-width: 2px;
+	padding-top: 2%;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-bottom-width: 2px;
+}
+
+#memeWords h4 {
+	color: white;
+	font-family: courier new, lucida console, monaco;
+	justify-self: center;
+	align-self: center;
+	grid-row: 1;
+	grid-column: 1;
+}
+
+#memeWords p {
+	color: white;
+	font-family: courier new, lucida console, monaco;
+	grid-row: 2;
+	grid-column: 1;
+	justify-self: center;
+	align-self: top;
+	text-align: center;
+}
+
+#quotePicBox {
+	display: flex;
+	grid-row: 1;
+	grid-column: 2;
+	justify-content: center;
+	align-content: center;
+}
+
+#quotePic {
+	height: 75%;
+	width: 75%;
+	justify-self: center;
+	align-self: center;
+}
+
+#vidPicBox {
+	display: flex;
+	grid-row: 2;
+	grid-column: 2;
+	justify-content: center;
+	align-content: center;
+}
+
+#vidPic {
+	height: 75%;
+	width: 75%;
+	justify-self: center;
+	align-self: center;
+}
+
+#memePicBox {
+	display: flex;
+	grid-row: 3;
+	grid-column: 2;
+	justify-content: center;
+	align-content: center;
+}
+
+#memePic {
+	height: 75%;
+	width: 75%;
+	justify-self: center;
+	align-self: center;
+}
+
+#memeContent {
 	margin-top: 3%;
 	margin-bottom: 3%;
 	background-image: url("memes/0.jpg");
 	background-size: contain;
-	background-position: center;
+	background-position: 45% 5%;
 	background-repeat: no-repeat;
 	display: grid;
 	grid-row: 3;
